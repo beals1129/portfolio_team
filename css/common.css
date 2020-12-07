@@ -1,32 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 /* RESET CSS */
 
-* {margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased;}
-ul, li {list-style: none;}
-a {text-decoration: none; color: inherit;}
-div, header, nav, main, footer, section, article, ul, li {margin: 0; padding: 0; box-sizing: border-box;} 
-h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+div,
+header,
+nav,
+main,
+footer,
+section,
+article,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
 
 /* 공통 */
 
 body {
   font-size: 1rem;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   background-color: var(--main-color);
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
-
 
 /* ROOT */
 
 :root {
-  --main-color: #021D44;
-  --accent-color: #FF3E55;
-  --white-color: #F7F6F5;
+  --main-color: #021d44;
+  --accent-color: #ff3e55;
+  --white-color: #f7f6f5;
+}
+
+/* 공통 fixed 작업 */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero_bg_box {
+  width: 40%;
+  height: 100vh;
+  background-color: var(--white-color);
+  opacity: 0.03;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.main_nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  padding: 4.3vh 4.3vw;
+  border-left: 1px solid var(--white-color);
+}
+
+.nav_conts {
+  position: absolute;
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.nav_work {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav_about {
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home_link {
+  position: fixed;
+  top: 4vw;
+  left: 4vw;
+}
+.home_link a {
+  color: var(--white-color);
+}
+
+.home_link a:hover {
+  color: var(--white-color);
+  text-decoration: none;
 }
