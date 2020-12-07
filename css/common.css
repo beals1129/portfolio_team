@@ -83,7 +83,7 @@ body {
   right: 0;
   width: 0;
   height: 100vh;
-  padding: 4.3vh 4.3vw;
+  width: 8.6vw;
   border-left: 1px solid var(--white-color);
 }
 
@@ -118,4 +118,22 @@ body {
 .home_link a:hover {
   color: var(--white-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .main_nav {
+    border: none;
+    padding-top: 4vw;
+    padding-right: 4vw;
+
+    box-sizing: content-box;
+  }
+  .nav_conts {
+    margin-top: 5px;
+    font-size: 18px;
+    position: relative;
+  }
+  .home_link {
+    font-size: 11.7px;
+  }
 }
