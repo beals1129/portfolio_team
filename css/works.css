@@ -42,9 +42,8 @@
   transition: all 0.4s;
 }
 
-.item:hover a {opacity: 0.08;}
-.item:hover .item_text {bottom: 0; opacity: 1;}
-
+.item > div:hover a {opacity: 0.08;}
+.item > div:hover .item_text {bottom: 0; opacity: 1;}
 
 .item_text {
   width: 100%;
