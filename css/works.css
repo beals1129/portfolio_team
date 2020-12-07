@@ -1,0 +1,87 @@
+:root {
+  --item-gap: 6px;
+}
+
+#hero {overflow: visible;}
+.hero_bg_box {z-index: -1;}
+.nav_work {color: var(--accent-color);}
+
+
+#works_container {
+  width: 65%;
+  margin: 4vw auto;
+  padding: 0 0 4vw;
+}
+
+.works_wrap {
+  display: flex; flex-flow: row wrap;
+  width: 100%; 
+  background-color: var(--main-color);
+}
+
+
+.large {width: 50%; height: 30vw; padding: var(--item-gap);}
+.width_medium {width: 25%; height: 30vw; padding: var(--item-gap);}
+.small {display: flex; flex-flow: column;}
+.small div:first-child {margin-bottom: calc(var(--item-gap) * 2)}
+.height_medium {width: 100%; height: 15vw; padding: var(--item-gap);}
+.height_medium_small {width: 50%; height: 15vw; padding: var(--item-gap);}
+
+.item > div {
+  width: 100%; height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.item div a {
+  display: block;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.4s;
+}
+
+.item:hover a {opacity: 0.08;}
+.item:hover .item_text {bottom: 0; opacity: 1;}
+
+
+.item_text {
+  width: 100%;
+  position: absolute; bottom: -20px; left: 0;
+  padding: 30px; opacity: 0;
+  color: var(--white-color);
+  transition: all 0.4s;
+}
+.item_text h3 {
+  font-size: 19px; font-weight: 700;
+  margin-bottom: calc(var(--item-gap)*1.5);
+}
+.item_text span {
+  font-size: 14px; font-weight: 400;
+  margin-right: calc(var(--item-gap)*3);
+}
+
+
+
+
+/* hover 되면 떠오르는 배경색 원하는걸루 바꾸세요 */
+.item_bgcolor1 {background-color: rgba(0,58,132,0.95);}
+.item_bgcolor2 {background-color: rgba(255,62,85,0.95); }
+.item_bgcolor3 {background-color: rgba(0,58,132,0.95);}
+.item_bgcolor4 {background-color: rgba(255,62,85,0.95);}
+.item_bgcolor5 {background-color:rgba(255,62,85,0.95);}
+.item_bgcolor6 {background-color: rgba(0,58,132,0.95);}
+.item_bgcolor7 {background-color: rgba(255,62,85,0.95);}
+.item_bgcolor8 {background-color: rgba(0,58,132,0.95);}
+.item_bgcolor9 {background-color: rgba(255,62,85,0.95);}
+
+
+/* 나중에 여기에 순서대로 포폴 이미지 넣으세요 */
+.item_bgimg1 {background-image: url(../img/sample1.gif);}
+.item_bgimg2 {background-image: url(../img/sample2.jpg);}
+
+
+
+
+
