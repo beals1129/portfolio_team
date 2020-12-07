@@ -39,6 +39,18 @@ h6 {
   font-weight: normal;
 }
 
+h1 {
+  font-size: 70px;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 900;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
 /* 공통 */
 
 body {
@@ -76,6 +88,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: -1;
 }
 .main_nav {
   position: fixed;
