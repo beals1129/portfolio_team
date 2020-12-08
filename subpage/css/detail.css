@@ -1,0 +1,110 @@
+#hero {
+  height: auto ;
+  overflow: visible;
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 70px;
+  line-height: 1.4em;
+  text-align: center;
+  font-weight: 900;
+}
+h3 {
+  color: rgb(110, 161, 255);
+}
+p {
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 200;
+}
+
+
+.detail_container {
+  width: 60%;
+  margin: 150px auto 0;
+  color: var(--white-color);
+  z-index: 10;
+}
+
+.detail_img {
+  background-color: gray;
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 70px;
+}
+
+.detail_header {
+  text-align: center;
+}
+.detail_subtitle {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(110, 161, 255);
+}
+
+.detail_text_wrap {
+  display: flex;
+  margin-top: 48px;
+}
+
+
+.detail_work {
+  width: 30%;
+}
+
+.detail_work p, .detail_expaine p {
+  margin-bottom: 16.8px;
+}
+
+.detail_work h3 , .detail_expaine h3 {
+  margin-bottom: 7.4px;
+}
+
+.detail_expaine {
+  width: 65%;
+  margin-right: 44px;
+  padding-right: 30px;
+}
+
+.icon_close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateY(-50%);
+  fill: #FFFFFF;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.icon_close:hover {
+
+  fill: var(--accent-color);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+
+  h1 { font-size: 2rem;}
+  h3 { font-size: 0.8rem; }
+  .detail_subtitle{ font-size: 0.8rem; }
+  
+  .detail_container {
+    width: 90%;
+    margin: 100px auto 0;}
+
+  .icon_close{width: 22px; height: 22px; top: 50px;}
+
+  .detail_text_wrap {
+    display: block;
+  }
+
+  .detail_work ,.detail_expaine {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+}
