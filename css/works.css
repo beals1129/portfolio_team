@@ -1,31 +1,67 @@
 :root {
   --item-gap: 6px;
+  --bg-main: rgba(0,58,132,0.95);
+  --bg-accent: rgba(255,62,85,0.95);
 }
 
+
+/* COMMON 초기화 */
 #hero {overflow: visible;}
 .hero_bg_box {z-index: -1;}
 .nav_work {color: var(--accent-color);}
 
 
-#works_container {
+
+
+/* WORK CONTAINER */
+.works_container {
   width: 65%;
   margin: 4vw auto;
   padding: 0 0 4vw;
 }
 
 .works_wrap {
-  display: flex; flex-flow: row wrap;
-  width: 100%; 
+  /* display: flex; flex-flow: row wrap; */
+  /* max-width: 1300px; 
+  min-width: 600px;  */
   background-color: var(--main-color);
+  position: relative;
 }
+
+.item {
+  position: absolute; 
+  top: 0; left: 0;
+  transition: top 0.3s, left 0.4s;
+}
+
+/* 맨 처음에 보따리처럼 풀리는애로 하려면 이걸로:  .item에 transition: transform 1s; */
+/* .item:nth-child(1) {transform: translate3d(0, 0, 0);}
+.item:nth-child(2) {transform: translate3d(100%, 0, 0);}
+.item:nth-child(3) {transform: translate3d(0, 100%, 0);}
+.item:nth-child(4) {transform: translate3d(50%, 100%, 0);}
+.item:nth-child(5) {transform: translate3d(300%, 100%, 0);}
+.item:nth-child(6) {transform: translate3d(0%, 400%, 0);}
+.item:nth-child(7) {transform: translate3d(0%, 500%, 0);}
+.item:nth-child(8) {transform: translate3d(100%, 500%, 0);} */
+
+
+/* 무식하게 계산해서 때려넣음*/
+.item:nth-child(2) {top: 0; left: 0;}
+.item:nth-child(2) {top: 0; left: 32.5vw;}
+.item:nth-child(3) {top: 30vw; left: 0;}
+.item:nth-child(4) {top: 30vw; left: 16.25vw;}
+.item:nth-child(5) {top: 30vw; left: 48.75vw;}
+.item:nth-child(6) {top: 60vw; left: 0;}
+.item:nth-child(7) {top: 75vw; left: 0;}
+.item:nth-child(8) {top: 75vw; left: 32.5vw;}
 
 
 .large {width: 50%; height: 30vw; padding: var(--item-gap);}
 .width_medium {width: 25%; height: 30vw; padding: var(--item-gap);}
-.small {display: flex; flex-flow: column;}
-.small div:first-child {margin-bottom: calc(var(--item-gap) * 2)}
 .height_medium {width: 100%; height: 15vw; padding: var(--item-gap);}
 .height_medium_small {width: 50%; height: 15vw; padding: var(--item-gap);}
+.small {display: flex; flex-flow: column;}
+.small div:first-child {margin-bottom: calc(var(--item-gap) * 2)}
 
 .item > div {
   width: 100%; height: 100%;
@@ -45,6 +81,7 @@
 .item > div:hover a {opacity: 0.08;}
 .item > div:hover .item_text {bottom: 0; opacity: 1;}
 
+
 .item_text {
   width: 100%;
   position: absolute; bottom: -20px; left: 0;
@@ -52,10 +89,12 @@
   color: var(--white-color);
   transition: all 0.4s;
 }
+
 .item_text h3 {
   font-size: 19px; font-weight: 700;
   margin-bottom: calc(var(--item-gap)*1.5);
 }
+
 .item_text span {
   font-size: 14px; font-weight: 400;
   margin-right: calc(var(--item-gap)*3);
@@ -64,19 +103,19 @@
 
 
 
-/* hover 되면 떠오르는 배경색 원하는걸루 바꾸세요 */
-.item_bgcolor1 {background-color: rgba(0,58,132,0.95);}
-.item_bgcolor2 {background-color: rgba(255,62,85,0.95); }
-.item_bgcolor3 {background-color: rgba(0,58,132,0.95);}
-.item_bgcolor4 {background-color: rgba(255,62,85,0.95);}
-.item_bgcolor5 {background-color:rgba(255,62,85,0.95);}
-.item_bgcolor6 {background-color: rgba(0,58,132,0.95);}
-.item_bgcolor7 {background-color: rgba(255,62,85,0.95);}
-.item_bgcolor8 {background-color: rgba(0,58,132,0.95);}
-.item_bgcolor9 {background-color: rgba(255,62,85,0.95);}
+/* hover 되면 떠오르는 배경색: root에서 원하는 색으로 바꾸세요 */
+.item_bgcolor1 {background-color: var(--bg-main)}
+.item_bgcolor2 {background-color: var(--bg-accent)}
+.item_bgcolor3 {background-color: var(--bg-main);}
+.item_bgcolor4 {background-color: var(--bg-accent);}
+.item_bgcolor5 {background-color: var(--bg-accent);}
+.item_bgcolor6 {background-color: var(--bg-main);}
+.item_bgcolor7 {background-color: var(--bg-accent);}
+.item_bgcolor8 {background-color: var(--bg-main);}
+.item_bgcolor9 {background-color: var(--bg-accent);}
 
 
-/* 나중에 여기에 순서대로 포폴 이미지 넣으세요 */
+/* 순서대로 포폴 이미지 넣으세요 */
 .item_bgimg1 {background-image: url(../img/sample1.gif);}
 .item_bgimg2 {background-image: url(../img/sample2.jpg);}
 
