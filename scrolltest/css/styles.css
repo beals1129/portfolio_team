@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide_wrap {
+  width: 200%;
+  background-size: 210% auto;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+p {
+  color: #fff;
+  font-size: 4vw;
+  font-family: monospace;
+}
