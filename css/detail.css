@@ -1,13 +1,12 @@
-body {
-  overflow-y: visible;
-}
+body {overflow-y: visible;}
 
 #hero {
   height: auto ;
   overflow: visible;
+  padding-bottom: 50px;
 }
 h1 {
-  font-size: 70px;
+  font-size: 4rem;
   line-height: 1.4em;
   text-align: center;
   font-weight: 900;
@@ -77,4 +76,37 @@ p {
   left: 50%;
   top: 100px;
   transform: translateY(-50%);
+  fill: #FFFFFF;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.icon_close:hover {
+
+  fill: var(--accent-color);
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+
+  h1 { font-size: 2rem;}
+  h3 { font-size: 0.8rem; }
+  .detail_subtitle{ font-size: 0.8rem; }
+  
+  .detail_container {
+    width: 90%;
+    margin: 100px auto 0;}
+
+  .icon_close{width: 22px; height: 22px; top: 50px;}
+
+  .detail_text_wrap {
+    display: block;
+  }
+
+  .detail_work ,.detail_expaine {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
 }
