@@ -1,82 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #021d44;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.whole_wrap {
-  position: relative;
-}
-
-.bg_box {
-  position: fixed;
-  width: 40%;
-  height: 100vh;
-  background-color: #f7f6f5;
-  opacity: 0.03;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.fa-envelope {
-  color: white;
-}
-
-.menu_home {
+#slide_wrap {
   position: absolute;
-  top: 4em;
-  left: 4em;
-  font-size: 16.8px;
-  letter-spacing: 15px;
-  line-height: 35px;
-}
-
-.intro_text {
-  position: fixed;
-  top: 50%;
-  width: 20%;
-  color: white;
-}
-
-.menu_mail_link {
-  position: absolute;
-  bottom: 4vw;
-  left: 4vw;
-}
-
-.home_menu_list {
-  position: fixed;
-  width: 10%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  border-left: 1px solid rgba(247, 246, 245, 0.1);
-}
-
-.home_menu_work {
-  position: absolute;
-  top: 4em;
   width: 100%;
-  text-align: center;
-  font-size: 24px;
+  top: 30%;
+  height: 5vh;
+  z-index: 7;
+}
+
+#slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
-.home_menu_about {
-  position: absolute;
-  bottom: 4vw;
-  width: 100%;
-  text-align: center;
+.slide_contents {
+  color: #fff;
   font-size: 24px;
-  list-style: none;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  margin-right: 150px;
+}
+
+.slide_contents img {
+  height: 250px;
 }
