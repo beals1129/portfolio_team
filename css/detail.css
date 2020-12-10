@@ -57,6 +57,7 @@ p {
 
 .detail_work p, .detail_expaine p {
   margin-bottom: 16.8px;
+   font-family: 'Noto Sans KR', serif;
 }
 
 .detail_work h3 , .detail_expaine h3 {
