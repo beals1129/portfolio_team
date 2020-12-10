@@ -5,8 +5,9 @@
 }
 
 
-/* COMMON 초기화 */
-#hero {overflow: visible;}
+/* COMMON STYLE 초기화 */
+body {width: 100%; height: 100%;}
+#hero {overflow-y: visible;}
 .hero_bg_box {z-index: -1;}
 .nav_work {color: var(--accent-color);}
 
@@ -15,24 +16,27 @@
 
 /* WORK CONTAINER */
 .works_container {
-  width: 65%;
-  margin: 4vw auto;
-  padding: 0 0 4vw;
+  width: 65%; height: auto;
+  margin: 4vw auto 4vw; padding: 0 0 4vw;
 }
 
-.works_wrap {
-  /* display: flex; flex-flow: row wrap; */
-  /* max-width: 1300px; 
-  min-width: 600px;  */
-  background-color: var(--main-color);
-  position: relative;
-}
+.works_wrap {position: relative;}
+
+
+
+
+
+
+/* ITEM: 반응형 처리------------------------- */
 
 .item {
-  position: absolute; 
-  top: 0; left: 0;
+  position: absolute; top: 0; left: 0;
+  padding: var(--item-gap);
+
+  /* 원하는 반응에 따라 property 선택 */
   transition: top 0.3s, left 0.4s;
 }
+
 
 /* 맨 처음에 보따리처럼 풀리는애로 하려면 이걸로:  .item에 transition: transform 1s; */
 /* .item:nth-child(1) {transform: translate3d(0, 0, 0);}
@@ -45,23 +49,33 @@
 .item:nth-child(8) {transform: translate3d(100%, 500%, 0);} */
 
 
-/* 무식하게 계산해서 때려넣음*/
-.item:nth-child(2) {top: 0; left: 0;}
-.item:nth-child(2) {top: 0; left: 32.5vw;}
+/* 무식하게 계산해서 때려넣는 방법 */
+.item:nth-child(1) {top: 0; left: 0;}
+.item:nth-child(2) {top: 0; left: 32.25vw;}
 .item:nth-child(3) {top: 30vw; left: 0;}
-.item:nth-child(4) {top: 30vw; left: 16.25vw;}
-.item:nth-child(5) {top: 30vw; left: 48.75vw;}
+.item:nth-child(4) {top: 30vw; left: 16vw;}
+.item:nth-child(5) {top: 30vw; left: 48.25vw;}
 .item:nth-child(6) {top: 60vw; left: 0;}
 .item:nth-child(7) {top: 75vw; left: 0;}
-.item:nth-child(8) {top: 75vw; left: 32.5vw;}
+.item:nth-child(8) {top: 75vw; left: 32.25vw;}
 
 
-.large {width: 50%; height: 30vw; padding: var(--item-gap);}
-.width_medium {width: 25%; height: 30vw; padding: var(--item-gap);}
-.height_medium {width: 100%; height: 15vw; padding: var(--item-gap);}
-.height_medium_small {width: 50%; height: 15vw; padding: var(--item-gap);}
+
+
+/* ITEM: box사이즈 처리----------------------  */
+
+.large {width: 50%; height: 30vw;}
+.width_medium {width: 25%; height: 30vw;}
+.height_medium {width: 100%; height: 15vw;}
+.height_medium_small {width: 50%; height: 15vw;}
 .small {display: flex; flex-flow: column;}
 .small div:first-child {margin-bottom: calc(var(--item-gap) * 2)}
+
+
+
+
+
+/* ITEM:hover ----------------------------- */
 
 .item > div {
   width: 100%; height: 100%;
@@ -81,6 +95,11 @@
 .item > div:hover a {opacity: 0.08;}
 .item > div:hover .item_text {bottom: 0; opacity: 1;}
 
+
+
+
+
+/* ITEM TEXT -------------------------------- */
 
 .item_text {
   width: 100%;
@@ -115,7 +134,8 @@
 .item_bgcolor9 {background-color: var(--bg-accent);}
 
 
-/* 순서대로 포폴 이미지 넣으세요 */
+
+/* bg로 포폴 이미지 넣으세요 */
 .item_bgimg1 {background-image: url(../img/sample1.gif);}
 .item_bgimg2 {background-image: url(../img/sample2.jpg);}
 
@@ -123,3 +143,100 @@
 
 
 
+
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1440px) {
+  .item {padding: calc(var(--item-gap) / 2);}
+  .small div:first-child {margin-bottom: var(--item-gap);}
+
+  .item:nth-child(2) {top: 0; left: 32.15vw;}
+  .item:nth-child(4) {top: 30vw; left: 16.15vw;}
+  .item:nth-child(5) {top: 30vw; left: 48.3vw;}
+  .item:nth-child(8) {top: 75vw; left: 32vw;}
+
+}
+
+
+@media screen and (max-width: 990px) {
+  #hero {
+    height: auto; 
+    overflow-x: hidden; overflow-y: hidden;}
+
+  .hero_bg_box {
+    width: 40%; height: 100vh;
+    position: fixed; top: 0; right: 0;
+    z-index: -1; opacity: .03;
+    background-color: var(--white-color);
+  }
+
+  .home_link {
+    position: absolute; top: 40px; left: 40px;
+    width: 100%;
+    font-size: 10px; line-height: 16px; letter-spacing: .5rem;
+  }
+  
+  .main_nav {
+    position: relative; top: 0; right: 0;
+    width: 100%; height: 20px;
+  }
+  
+  .nav_conts {
+    text-align: right;
+    font-size: 16px; letter-spacing: .1rem; 
+    transform: translate(0, 0); 
+    left: auto; right: 40px;
+  }
+
+  .nav_work {top: 35px;}
+  .nav_about {top: 60px;}
+
+
+  .works_container {
+    width: 90%; max-width: 1680px;
+    margin: 8rem auto 4rem auto;
+    padding: 0;
+  }
+
+  .works_wrap {position: relative; height: 130vh;}
+
+  /* BOX SIZE 처리 */
+  .large {width: 50%; height: 44vw;}
+  .width_medium {width: 25%; height: 44vw;}
+  .height_medium {width: 100%; height: 22vw;}
+  .height_medium_small {width: 50%; height: 22vw;}
+  .small div:first-child {margin-bottom: calc(var(--item-gap) * 2)}
+
+  /* 계산해서 때려넣음 2 */
+  .item {padding: var(--item-gap);}
+  .item:nth-child(1) {top: 0; left: 0;}
+  .item:nth-child(2) {top: 0; left: 44.25vw;}
+  .item:nth-child(3) {top: 44vw; left: 0;}
+  .item:nth-child(4) {top: 44vw; left: 22.25vw;}
+  .item:nth-child(5) {top: 44vw; left: 66.5vw;}
+  .item:nth-child(6) {top: 88vw; left: 0;}
+  .item:nth-child(7) {top: 110vw; left: 0;}
+  .item:nth-child(8) {top: 110vw; left: 44.25vw;}
+  
+}
+
+
+
+
+/* 모바일 대응 */
+@media screen and (max-width: 580px) {
+  .works_wrap {position: relative; height: 250vh;}
+
+  /* .item {padding: calc(var(--item-gap) / 2);} */
+  .item:nth-child(1) {width: 100%; height: 88vw;}
+  .item:nth-child(2) {width: 100%; height: 88vw; left: 0; top: 88vw;}
+  .item:nth-child(3) {width: 50%; height: 88vw; top: 176vw; left: 0;}
+  .item:nth-child(4) {width: 100%; height: 88vw; left: 0; top: 264vw;}
+  .item:nth-child(5) {width: 50%; height: 88vw; top: 176vw; left: 43.25vw;}
+  .item:nth-child(6) {width: 100%; height: 44vw; top: 352vw; left: 0;}
+  .item:nth-child(7) {width: 100%; height: 44vw; top: 396vw; left: 0;}
+  .item:nth-child(8) {width: 100%; height: 44vw; top: 440vw; left: 0;}
+
+}
