@@ -1,7 +1,12 @@
 :root {
   --item-gap: 6px;
-  --bg-main: rgba(0,58,132,0.95);
-  --bg-accent: rgba(255,62,85,0.95);
+  --bg-main: rgba(245, 208, 66, 0.95);
+  --bg-accent: rgba(245, 208, 66, 0.95);
+
+  --main-color: #f7f6f5;
+  --sub-color: #003a84;
+  --accent-color: #FDD20E;
+  --white-color: #101820;
 }
 
 
@@ -11,6 +16,7 @@ body {width: 100%; height: 100%; overflow-y: visible;}
 .hero_bg_box {z-index: -1;}
 .nav_work {color: var(--accent-color);}
 .mail_link {z-index: 200;}
+.mail_link a svg {fill: var(--white-color);}
 
 
 
@@ -137,15 +143,15 @@ body {width: 100%; height: 100%; overflow-y: visible;}
 
 
 /* bg로 포폴 이미지 넣으세요 */
-.item_bgimg1 {background-image: url(../img/thumbnail_ferrari.gif);}
-.item_bgimg2 {background-image: url(../img/thum_apple2.png);}
+.item_bgimg1 {background-image: url(../img/thum_ferrari_y.jpg);}
+.item_bgimg2 {background-image: url(../img/thum_kinfolk_y.jpg);}
 .item_bgimg3 {background-image: url(../img/thum_sticky_y1.jpg);}
-.item_bgimg4 {background-image: url(../img/thumbnail_nike_2.jpg);}
-.item_bgimg5 {background-image: url(../img/thumbnail_starbucks_3.jpg);}
-.item_bgimg6 {background-image: url(../img/thum_nike2.jpg);}
-.item_bgimg7 {background-image: url(../img/thumbnail_netfilx.gif);}
-.item_bgimg8 {background-image: url(../img/thum_apple.jpg);}
-.item_bgimg9 {background-image: url(../img/thum_sticky_y2.jpg);}
+.item_bgimg4 {background-image: url(../img/thum_apple2.png);}
+.item_bgimg5 {background-image: url(../img/thum_nike2.jpg);}
+.item_bgimg6 {background-image: url(../img/thum_gopro_.png);}
+.item_bgimg7 {background-image: url(../img/thum_starbucks.jpg);}
+.item_bgimg8 {background-image: url(../img/thum_sticky_y2.jpg);}
+.item_bgimg9 {background-image: url(../img/thum_netflix_y2.png);}
 
 
 
