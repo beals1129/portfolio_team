@@ -1,0 +1,26 @@
+#slide_wrap {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  height: 5vh;
+  z-index: 7;
+}
+
+#slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.slide_contents {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Noto Sans";
+  font-weight: 800;
+  margin-right: 150px;
+}
+
+.slide_contents img {
+  height: 250px;
+}

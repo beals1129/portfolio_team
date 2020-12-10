@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
 
 /* font-family: 'Noto Sans KR', serif; */
-
 
 /* RESET CSS */
 * {
@@ -11,7 +10,10 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
-ul, li {list-style: none;}
+ul,
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -45,9 +47,10 @@ body {
   font-size: 1rem;
   font-family: "Roboto", serif;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: var(--main-color);
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* ROOT */
@@ -58,7 +61,6 @@ body {
   --accent-color: #ff3e55;
   --white-color: #f7f6f5;
 }
-
 
 /* 공통 fixed 작업 */
 
@@ -96,7 +98,9 @@ body {
   font-size: 22px;
 }
 
-.nav_conts:hover {color: var(--accent-color);}
+.nav_conts:hover {
+  color: var(--accent-color);
+}
 
 .nav_work {
   top: 9%;
@@ -111,9 +115,13 @@ body {
 }
 
 .home_link {
-  position: fixed; top: 4vw; left: 4vw;
-  font-size: .9rem; font-weight: 400; 
-  line-height: 1.8; letter-spacing: .7rem;
+  position: fixed;
+  top: 4vw;
+  left: 4vw;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.7rem;
   text-transform: uppercase;
 }
 
@@ -127,29 +135,35 @@ body {
 }
 
 .mail_link {
-  position: fixed; bottom: 4vw; left: 4vw;
-  width: 44px; height: 44px;
+  position: fixed;
+  bottom: 4vw;
+  left: 4vw;
+  width: 44px;
+  height: 44px;
   background-color: var(--accent-color);
   border-radius: 100%;
 }
 
 .mail_link a {
   display: inline-flex;
-  justify-content: center; align-items: center;
-  width: 100%; height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.mail_link a svg { 
-  width: 60%; height: 100%; 
+.mail_link a svg {
+  width: 60%;
+  height: 100%;
   fill: var(--main-color);
 }
 
-.mail_link:hover {background-color: var(--sub-color);}
-.mail_link:hover a svg {fill: var(--accent-color);}
-
-
-
-
+.mail_link:hover {
+  background-color: var(--sub-color);
+}
+.mail_link:hover a svg {
+  fill: var(--accent-color);
+}
 
 @media screen and (max-width: 800px) {
   .main_nav {
