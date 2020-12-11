@@ -60,6 +60,7 @@ body {
   --sub-color: #003a84;
   --accent-color: #ff3e55;
   --white-color: #f7f6f5;
+  --point-color: rgb(0, 152, 255);
 }
 
 /* 공통 fixed 작업 */

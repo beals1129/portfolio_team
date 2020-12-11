@@ -12,7 +12,7 @@ h1 {
   font-weight: 900;
 }
 h3 {
-  color: rgb(110, 161, 255);
+  color: var(--point-color);
 }
 p {
   font-size: 16px;
@@ -44,7 +44,7 @@ p {
 .detail_subtitle {
   font-size: 15px;
   text-align: center;
-  color: rgb(110, 161, 255);
+  color: var(--point-color);
 }
 
 .detail_text_wrap {

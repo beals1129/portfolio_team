@@ -100,7 +100,7 @@ body {
     display: none;
 }
 .contact_2 li:first-child{
-    color:rgb(0, 152, 255);
+    color:var(--point-color);
 }
 
 @media screen and (max-width: 1400px) {
