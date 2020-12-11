@@ -83,7 +83,7 @@ p {
   left: 50%;
   top: 100px;
   transform: translateY(-50%);
-  fill: #FFFFFF;
+  fill: var(--white-color);
   transition: fill 0.3s;
   cursor: pointer;
 }
