@@ -14,7 +14,7 @@
 }
 
 .slide_contents {
-  color: #fff;
+  color: var(--white-color);
   font-size: 24px;
   font-family: "Noto Sans";
   font-weight: 800;
