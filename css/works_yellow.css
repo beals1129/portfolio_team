@@ -14,7 +14,7 @@
 body {width: 100%; height: 100%; overflow-y: visible;}
 #hero {overflow-y: visible;}
 .hero_bg_box {z-index: -1;}
-.nav_work {color: var(--accent-color);}
+/* .nav_work {color: var(--accent-color);} */
 .mail_link {z-index: 200;}
 .mail_link a svg {fill: var(--white-color);}
 

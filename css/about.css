@@ -41,6 +41,9 @@ body {
     /* top: 600px; */
     /* left: 300px; */
 }
+.nav_about a{
+    color: var(--accent-color);
+}
 .text{
     width: 593px;
 }
