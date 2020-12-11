@@ -137,13 +137,13 @@ body {width: 100%; height: 100%; overflow-y: visible;}
 
 
 /* bg로 포폴 이미지 넣으세요 */
-.item_bgimg1 {background-image: url(../img/thumbnail_ferrari.gif);}
+.item_bgimg1 {background-image: url(../img/thumbnail_ferrari_img.png);}
 .item_bgimg2 {background-image: url(../img/thum_apple2.png);}
 .item_bgimg3 {background-image: url(../img/thum_sticky_y1.jpg);}
 .item_bgimg4 {background-image: url(../img/thumbnail_nike_2.jpg);}
 .item_bgimg5 {background-image: url(../img/thumbnail_starbucks_3.jpg);}
 .item_bgimg6 {background-image: url(../img/thum_nike2.jpg);}
-.item_bgimg7 {background-image: url(../img/thumbnail_netfilx.gif);}
+.item_bgimg7 {background-image: url(../img/thumbnail_netfilx_img.png);}
 .item_bgimg8 {background-image: url(../img/thum_apple.jpg);}
 .item_bgimg9 {background-image: url(../img/thum_sticky_y2.jpg);}
 
